@@ -411,13 +411,6 @@ bool Game::Initialize() {
 	scrFilter->setLargeStep(10);
 	scrFilter->setSmallStep(1);
 	scrFilter->setVisible(false);
-	//sort type
-	wSort = env->addStaticText(L"", rect<s32>(930, 132, 1020, 156), true, false, 0, -1, true);
-	cbSortType = env->addComboBox(rect<s32>(10, 2, 85, 22), wSort, COMBOBOX_SORTTYPE);
-	cbSortType->setMaxSelectionRows(10);
-	for(int i = 1370; i <= 1373; i++)
-		cbSortType->addItem(dataManager.GetSysString(i));
-	wSort->setVisible(false);
 	//filters
 	wFilter = env->addStaticText(L"", rect<s32>(610, 5, 1020, 130), true, false, 0, -1, true);
 	wFilter->setVisible(false);

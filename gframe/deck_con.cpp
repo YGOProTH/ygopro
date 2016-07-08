@@ -116,7 +116,6 @@ bool DeckBuilder::OnEvent(const irr::SEvent& event) {
 				mainGame->wDeckEdit->setVisible(false);
 				mainGame->wCategories->setVisible(false);
 				mainGame->wFilter->setVisible(false);
-				mainGame->wSort->setVisible(false);
 				mainGame->wCardImg->setVisible(false);
 				mainGame->wInfos->setVisible(false);
 				mainGame->btnLeaveGame->setVisible(false);

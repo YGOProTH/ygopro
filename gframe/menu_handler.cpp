@@ -220,7 +220,6 @@ bool MenuHandler::OnEvent(const irr::SEvent& event) {
 				mainGame->wCardImg->setVisible(true);
 				mainGame->wDeckEdit->setVisible(true);
 				mainGame->wFilter->setVisible(true);
-				mainGame->wSort->setVisible(true);
 				mainGame->btnLeaveGame->setVisible(true);
 				mainGame->btnLeaveGame->setText(dataManager.GetSysString(1306));
 				mainGame->btnSideOK->setVisible(false);
