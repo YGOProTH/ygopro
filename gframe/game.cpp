@@ -452,8 +452,8 @@ bool Game::Initialize() {
 	ebAttack = env->addEditBox(L"", rect<s32>(260, 26, 340, 46), true, wFilter);
 	ebAttack->setTextAlignment(irr::gui::EGUIA_CENTER, irr::gui::EGUIA_CENTER);
 	stDef = env->addStaticText(dataManager.GetSysString(1323), rect<s32>(205, 51, 280, 71), false, false, wFilter);
-	ebDefence = env->addEditBox(L"", rect<s32>(260, 49, 340, 69), true, wFilter);
-	ebDefence->setTextAlignment(irr::gui::EGUIA_CENTER, irr::gui::EGUIA_CENTER);
+	ebDefense = env->addEditBox(L"", rect<s32>(260, 49, 340, 69), true, wFilter);
+	ebDefense->setTextAlignment(irr::gui::EGUIA_CENTER, irr::gui::EGUIA_CENTER);
 	stLevel = env->addStaticText(dataManager.GetSysString(1324), rect<s32>(10, 74, 80, 94), false, false, wFilter);
 	ebStar = env->addEditBox(L"", rect<s32>(60, 72, 140, 92), true, wFilter);
 	ebStar->setTextAlignment(irr::gui::EGUIA_CENTER, irr::gui::EGUIA_CENTER);
@@ -1233,7 +1233,7 @@ void Game::OnResize()
 	cbLimit->setRelativePosition(Resize(260, 3, 390, 23));
 	ebStar->setRelativePosition(Resize(60, 72, 140, 92));
 	ebAttack->setRelativePosition(Resize(260, 26, 340, 46));
-	ebDefence->setRelativePosition(Resize(260, 49, 340, 69));
+	ebDefense->setRelativePosition(Resize(260, 49, 340, 69));
 	ebCardName->setRelativePosition(Resize(260, 72, 390, 92));
 	btnEffectFilter->setRelativePosition(Resize(345, 28, 390, 69));
 	btnStartFilter->setRelativePosition(Resize(260, 96, 390, 118));
