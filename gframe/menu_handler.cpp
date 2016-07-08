@@ -211,7 +211,7 @@ bool MenuHandler::OnEvent(const irr::SEvent& event) {
 			}
 			case BUTTON_DECK_EDIT: {
 				mainGame->RefreshDeck(mainGame->cbDBDecks);
-				if(mainGame->cbDBDecks->getSelected() != -1)
+				if (mainGame->cbDBDecks->getSelected() != -1)
 					deckManager.LoadDeck(mainGame->cbDBDecks->getItem(mainGame->cbDBDecks->getSelected()));
 				mainGame->HideElement(mainGame->wMainMenu);
 				mainGame->is_building = true;
@@ -247,7 +247,7 @@ bool MenuHandler::OnEvent(const irr::SEvent& event) {
 				mainGame->deckBuilder.results.clear();
 				mainGame->deckBuilder.is_draging = false;
 				mainGame->device->setEventReceiver(&mainGame->deckBuilder);
-				for(int i = 0; i < 32; ++i)
+				for (int i = 0; i < 32; ++i)
 					mainGame->chkCategory[i]->setChecked(false);
 				break;
 			}
